@@ -29,6 +29,16 @@ function reverseList (head) {
     return prev;
 }
 
+function middleNum (head) {
+    let fast = head;
+    let slow = head;
+    while (fast != null && fast.next !== null ) {
+        slow = slow.next;
+        fast = fast.next.next;
+    }
+    return slow;
+}
+
 //linked list add to head
 
 function addToHead(head, data) {
@@ -75,6 +85,10 @@ traverse(head);
 head = addToTail(head, 200);
 head = addToTail(head, 220);
 traverse(head);
+
+let middle = middleNum(head);
+console.log(middle.data,'middle');
+
 
 head = reverseList(head)
 traverse(head);
