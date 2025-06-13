@@ -17,6 +17,18 @@ function traverse(head) {
   console.log(output.join(' -> '));
 }
 
+function reverseList (head) {
+    let prev = null;
+    let current = head;
+    while (current != null ) {
+        let nextNode = current.next;
+        current.next = prev;
+        prev = current;
+        current = nextNode;
+    }
+    return prev;
+}
+
 //linked list add to head
 
 function addToHead(head, data) {
@@ -62,6 +74,9 @@ traverse(head);
 
 head = addToTail(head, 200);
 head = addToTail(head, 220);
+traverse(head);
+
+head = reverseList(head)
 traverse(head);
 
 head = deleteNode(head, 25);
