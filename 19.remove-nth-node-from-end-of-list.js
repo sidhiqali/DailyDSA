@@ -29,7 +29,6 @@ var removeNthFromEnd = function(head, n) {
     first = first.next;
   }
 
-  // Move both pointers until first reaches end
   while (first !== null) {
     first = first.next;
     second = second.next;
