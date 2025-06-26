@@ -4,7 +4,7 @@
  * [1] Two Sum
  */
 
-// @lc code=start
+// @lc
 /**
  * @param {number[]} nums
  * @param {number} target
