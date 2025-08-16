@@ -10,7 +10,7 @@
  * @return {number}
  */
 var mostWordsFound = function(sentences) {
-  let maxWord = sentences.reduce((max, sentence) => {
+  let maxWord = sentences.reduce((max, sentence) => { 
   const wordCount = sentence.split(" ").length;
   return Math.max(max, wordCount);
 }, 0);
