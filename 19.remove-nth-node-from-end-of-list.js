@@ -22,6 +22,7 @@ var removeNthFromEnd = function(head, n) {
   dummy.next = head;
 
   let first = dummy;
+     
   let second = dummy;
 
   // Move first n+1 steps ahead
