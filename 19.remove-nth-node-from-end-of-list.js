@@ -15,7 +15,7 @@
 /**
  * @param {ListNode} head
  * @param {number} n
- * @return {ListNode}
+ * @return {ListNode} 
  */
 var removeNthFromEnd = function(head, n) {
      let dummy = new Node(0);  
