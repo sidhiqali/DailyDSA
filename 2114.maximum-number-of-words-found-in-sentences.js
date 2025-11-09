@@ -6,7 +6,7 @@
 
 // @lc code=start
 /**
- * @param {string[]} sentences
+ * @param {string[]} sentences 
  * @return {number}
  */
 var mostWordsFound = function(sentences) {  
